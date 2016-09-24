@@ -1,0 +1,118 @@
+<body>
+
+<main id="panel">
+    <main class="mainBackGround">
+        <header>
+            <div class="dropdown">
+              <div class="hamberger" ng-click="toggleDropdown()">&#xf0c9;</div>
+              <ul class="dropdown-menu">
+                  <li ng-click="billing()" class="menuItem marginBottomFive">
+                      <a>Billing</a>
+                  </li>
+                  <li ng-click="editProfile()" class="menuItem marginBottomFive">
+                      <a>Edit Profile</a>
+                  </li>
+                  <li class="menuItem marginBottomFive">
+                      <a href="">Edit MLS</a>
+                  </li>
+                  <li ng-click="changePassword()" class="menuItem marginBottomFive">
+                      <a>Password</a>
+                  </li>
+                  <li ng-click="logOut()" class="menuItem">
+                      <a>Log Out</a>
+                  </li>
+              </ul>
+            </div>
+
+            <div class="companyName">{{companyName}}</div>
+            <input class="littleSearch" placeholder="&#xf002;" type="text" ng-model="query ">
+            <script>
+                // Changes cursor to a pointer icon for littleSearch input box
+                $('input:file').each(function () {
+                    var $input = $(this);
+                    $input.before($('<div>').height($input.height()).width($input.width()).css({
+                        cursor: 'pointer',
+                        position: 'absolute',
+                        zIndex: $input.css('z-index')
+                    }).click(function () {
+                        $(this).hide();
+                        $input.click();
+                        $(this).show();
+                    }));
+                });
+            </script>
+        </header>
+
+
+        <div class="spacingFirstNgRepeat "></div>
+
+        <div class="containerRepeat " ng-repeat="listing in listings | filter:query ">
+
+            <div class="listingInfo ">
+
+                <div class="listingInfoImg">
+                    <img ng-click="list(listing._id)" src="http://lorempixel.com/400/200/city"
+                         ng-src="{{listing.picture}} ">
+                </div>
+
+                <div class="listingInfoDescrip">
+                    <div class="centerTheButton"><span ng-click="list(listing._id)">
+                        {{listing.address}}
+                        {{listing.StreetDirectionPfx}}
+                        {{listing.StreetName}}
+                        {{listing.StreetSuffix}}
+                        {{listing.Unit}}
+                    </span></div>
+
+                    <div class="centerTheButton"><span ng-click="list(listing._id)">{{listing.city}}</span>
+                    </div>
+
+                    <div class="centerTheButton"><span ng-click="list(listing.listingId, listing)">
+                        {{listing.price | currency:"$ ":0}} |
+
+                        {{listing.listingId}}
+                    </span></div>
+                    <!-- <div style="height: 2vw; visibility:hidden; ">4</div> -->
+                    <!-- Adds half a horizontal space -->
+                    <div class="centerTheButton"><strong>
+                        <span ng-show="listing.seller" ng-click="sellerView(listing._id)" class="sellerName "
+                              ng-click="showings(listing._id)">{{listing.seller.sellerName.firstName}}:
+                        </span>
+                        <br/>
+                    </strong></div>
+                    <div class="centerTheButton"><a ng-show="listing.seller"
+                                                    href="tel:+{{listing.seller.phoneNum}} ">{{listing.seller.phoneNum
+                        |
+                        tel}} </a></div>
+                </div>
+
+                <div class="listingInfoButtonContainer ">
+                    <div class="showRequestButton " ng-click="showRequest(listing._id, listing.seller) ">
+                        Show
+                    </div>
+
+                    <div class="editListing " ng-click="editListing(listing._id)">Details</div>
+                </div>
+            </div>
+
+            <div ng-show="listing.upcommingShowings.length > 0" class="showing">
+                <div>Upcoming Showings:</div>
+                <div ng-repeat="showing in listing.upcommingShowings | orderBy: 'timeSlot'">
+                    <span>{{showing.dayString}} {{showing.timeSlot | date: 'shortTime'}} </span>
+                    <span>{{showing.buyersAgent.name}}: </span>
+                    <a href="tel:+{{showing.buyersAgent.phoneNum}} ">{{showing.buyersAgent.phoneNum
+                        |
+                        tel}}</a>
+                    <!-- <span>{{showing.buyersAgent.name}} </span><a  href="tel:+1{{listing.nextShowing.buyersAgent.phoneNum}} ">{{showing.buyersAgent.phoneNum | tel}}</a><span> - {{showing.timeSlot | date: 'shortDate'}} - {{showing.timeSlot | date: 'shortTime'}}</span> -->
+                </div>
+            </div>
+            <!-- <div ng-show="listing.nextShowing" class="showing">
+                Next Showing: <span>{{listing.nextShowing.buyersAgent.name}} </span><a  href="tel:+1{{listing.nextShowing.buyersAgent.phoneNum}} ">{{listing.nextShowing.buyersAgent.phoneNum | tel}}</a><span> - {{listing.nextShowing.timeSlot | date: 'shortDate'}} - {{listing.nextShowing.timeSlot | date: 'shortTime'}}</span>
+            </div> -->
+        </div>
+        <div class="space"></div>
+
+    </main>
+</main>
+
+</body>

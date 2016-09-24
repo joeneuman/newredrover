@@ -1,0 +1,24 @@
+to do:
+
+rework queue system?
+if request requires a response don't send any more requests until they respond. Can keep sending the same request after certian period of time
+
+some pictures not showing up
+
+search bar only searches property address, mls, seller name or phone numbre, upcoming showing
+
+if seller doesn't respond to showing request w/i a certain amount of time
+	-> if past requested time cancel showing and send message to buyers agent
+
+twilio number implimentation
+	-> signing up
+	-> sending messages
+
+timezone implementation
+
+reset password stuff
+
+notification when lock box is opened??
+buyers agent cancel or re-schedule??
+
+clean up code

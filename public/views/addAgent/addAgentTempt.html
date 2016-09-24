@@ -1,0 +1,143 @@
+<body ng-app="app">
+
+<div class="container">
+    <div class="navbar">
+        <div ng-click="cancel()">Back</div>
+        &nbsp;&nbsp;
+        <div ng-click="loginUser()">Login</div>
+    </div>
+
+    <div class="row">
+        <div class="span4 offset4">
+            <div class="row">
+
+                <div class="signUpTitle">
+                    <h3>Red Rover</h3>
+                </div>
+
+                <div class="centeredColumn">
+                    <form>
+                        <fieldset>
+                            <div class="span3">
+                                <label for="">First Name</label>
+                                <input type="text" class="input-block-level" ng-model="user.firstName"
+                                       placeholder="Enter first name..." required/>
+                            </div>
+                            <div class="span3">
+                                <label for="">Last Name</label>
+                                <input type="text" class="input-block-level" ng-model="user.lastName"
+                                       placeholder="Enter last name..." required/>
+                            </div>
+                            <div class="span3">
+                                <label for="">Company Name</label>
+                                <input type="text" class="input-block-level" placeholder="Enter company name..."
+                                       ng-model="user.companyName" required/>
+                            </div>
+                            <div class="span3">
+                                <label id="emailMessage" for="">{{emailMessage}}</label>
+                                <input id="email" type="email" class="input-block-level" placeholder="Enter email..."
+                                       ng-model="user.email" required/>
+                            </div>
+                            <div class="span3">
+                                <label id="phoneMessage" for="">{{phoneMessage}}</label>
+                                <!-- <input id="phoneNum" type="text" class="input-block-level" placeholder="(XXX) XXX-XXXX" ng-keydown="phoneNumCheck($event)" ng-keyup="phoneNumCheck2($event)" ng-model="user.phoneNum" size="14" maxlength="14" required/> -->
+                                <div class="phoneNumInputGroup">
+                                    <span class="phoneNumInputGroupLabel">1&nbsp;</span><input id="phoneNum"
+                                                                                               ng-model="user.phoneNum"
+                                                                                               type="text"
+                                                                                               ng-keyup="phoneNumCheckTest($event)"
+                                                                                               placeholder="XXXXXXXXXX"
+                                                                                               maxlength="10" required/>
+                                </div>
+                            </div>
+
+                            <div class="span3">
+                                <label id="passwordMessageOne" for="">Password</label>
+                                <input id="password" type="password" class="input-block-level" ng-model="user.password"
+                                       ng-keyup="passwordCheck()"
+                                       placeholder="Enter password..." required/>
+                            </div>
+
+                            <div class="span3">
+                                <label id="passwordMessageTwo" for="">{{passwordMessage}}</label>
+                                <input id="passwordCheck" type="password" class="input-block-level"
+                                       ng-model="user.passwordCheck"
+                                       placeholder="Re-enter password..." ng-keyup="passwordCheck()" required/>
+                            </div>
+
+                            <div class="span3">
+                                <label for="">Pin Number</label>
+                                <input id="pinNum" type="text" class="input-block-level" ng-model="user.pinNum"
+                                       placeholder="Enter a 4 digit pin..." ng-keypress="pinNumCheck($event)" size="4"
+                                       maxlength="4" required/>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <hr/>
+
+                    <div style="color: red">{{errorMessage}}</div>
+
+                    <form stripe-form="handleStripe" name="myForm">
+                        <fieldset>
+                            <div class="span3">
+                                <label for="">Card number</label>
+                                <input ng-disabled="test() === false" type="text" class="input-block-level"
+                                       ng-model="number" payments-validate="card"
+                                       payments-format="card" payments-type-model="type"
+                                       ng-class="myForm.number.$card.type"
+                                       required/>
+                            </div>
+
+                            <div class="span1">
+                                <label for="">Expires</label>
+                                <input ng-disabled="test() === false" type="text" class="input-block-level"
+                                       ng-model="expiry" payments-validate="expiry"
+                                       payments-format="expiry" required/>
+                            </div>
+
+                            <div class="span3">
+                                <label for="">Name on card </label>
+                                <input ng-disabled="test() === false" type="text" class="input-block-level" required>
+                            </div>
+
+                            <div class="span1">
+                                <label for="">CVC</label>
+                                <input ng-disabled="test() === false" type="text" class="input-block-level"
+                                       ng-model="cvc"
+                                       payments-validate="cvc"
+                                       payments-format="cvc" payments-type-model="type" required/>
+                            </div>
+                            <div class="subscriptionContainer">
+                                <div class="subscriptionMonthly">
+                                    <label>Monthly Subscription</label>
+                                    <label>$40 / Month</label>
+                                    <input type="radio" name="subscription" value="monthly"
+                                           ng-model="user.subscription">
+                                </div>
+
+                                <div class="subscriptionAnnual">
+                                    <label>Annual Subscription</label>
+                                    <label>$400 / Year</label>
+                                    <input type="radio" name="subscription" value="annual" ng-model="user.subscription">
+                                </div>
+
+                            </div>
+                            <br>
+                            <div class="submitUser">
+                                <button ng-disabled="test() === false" type="submit" class="btn btn-primary btn-large"
+                                        ng-click="generateRandomNumber(user)">
+                                    Proceed
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

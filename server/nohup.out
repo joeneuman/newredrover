@@ -1,0 +1,12 @@
+warn:    --minUptime not set. Defaulting to: 1000ms
+warn:    --spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms
+Listening on port: 4000
+Connected to MongoDB
+sdfas@asdf.com 123214
+User not found
+p@p.com p
+User not found
+p@p.com p@p.com
+User not found
+meloo p
+User not found

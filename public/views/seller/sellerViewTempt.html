@@ -1,0 +1,58 @@
+<header>
+    <a ng-show="user" ui-sref="listingagent" class="backToLa">&#xf0a8;</a>
+    <div class="heading">{{listing.address}}</div>
+
+</header>
+<div class="spacingFirstNgRepeat "></div>
+    
+    
+<div>
+    <div class="feedbackSection">
+        <feedback id="{{'feedback' + $index}}" class="completedShowing" ng-repeat="showing in completedShowings" showing="showing"></feedback>
+    </div>
+    <div ng-show="completedShowings.length > 0" class="pastShowings" ng-click="showFeedbackFunction()">
+        <div ng-hide="showFeedback" class="pastShowingIcon">&#xf103;</div>
+        <div ng-show="showFeedback" class="pastShowingIcon">&#xf102;</div>
+        <div>Past Showings</div>
+        <div ng-hide="showFeedback" class="pastShowingIcon">&#xf103;</div>
+        <div ng-show="showFeedback" class="pastShowingIcon">&#xf102;</div>
+    </div>
+
+    <div>send url to seller</div>
+    <button ng-click="sendUrl()">send</button>
+    <div class="dayTitle">Today</div>
+
+    <div class="timeSlot" ng-repeat="timeSlot in availableShowingTimes.Today">
+        <div ng-show="timeSlot.status === 'pastTime'"class="timeSlotInner" style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div ng-show="timeSlot.status === 'available'" class="timeSlotInner" ng-click="cancelTimeslot('Today', $index, timeSlot)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div ng-show="timeSlot.status === 'canceled'"class="timeSlotInner" ng-click="uncancelTimeslot('Today', $index, timeSlot)" style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'pending'" ng-click="cancelTimeslot('Today', $index, timeSlot)" style="background-color: rgba(240, 0, 0, 0.3)">Pending</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'feedback-requested'"  style="background-color: rgba(240, 0, 0, 0.3)">Feedback</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'confirmed'" ng-click="cancelTimeslot('Today', $index, timeSlot)" style="background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.buyersAgent}}</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'completed'" style="background-color: rgba(240, 0, 0, 0.3)">Completed</div>
+    </div>
+    <div class="dayTitle">Tomorrow</div>
+    <div class="timeSlot" ng-repeat="timeSlot in availableShowingTimes.Tomorrow">
+        <div ng-show="timeSlot.status === 'pastTime'"class="timeSlotInner" style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div ng-show="timeSlot.status === 'available'" class="timeSlotInner" ng-click="cancelTimeslot('Tomorrow', $index, timeSlot)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div ng-show="timeSlot.status === 'canceled'"class="timeSlotInner" ng-click="uncancelTimeslot('Tomorrow', $index, timeSlot)" style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'pending'" ng-click="cancelTimeslot('Tomorrow', $index, timeSlot)" style="background-color: rgba(240, 0, 0, 0.3)">Pending</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'feedback-requested'"  style="background-color: rgba(240, 0, 0, 0.3)">Feedback</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'confirmed'" ng-click="cancelTimeslot('Tomorrow', $index, timeSlot)" style="background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.buyersAgent}}</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'completed'" style="background-color: rgba(240, 0, 0, 0.3)">Completed</div>
+    </div>
+    <div class="dayTitle">{{dayAfterTomorrow}}</div>
+    <div class="timeSlot" ng-repeat="timeSlot in availableShowingTimes[dayAfterTomorrow]">
+        <div ng-show="timeSlot.status === 'pastTime'"class="timeSlotInner" style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div ng-show="timeSlot.status === 'available'" class="timeSlotInner" ng-click="cancelTimeslot(dayAfterTomorrow, $index, timeSlot)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div ng-show="timeSlot.status === 'canceled'"class="timeSlotInner" ng-click="uncancelTimeslot(dayAfterTomorrow, $index, timeSlot)" style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date : 'shortTime'}}</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'pending'" ng-click="cancelTimeslot(dayAfterTomorrow, $index, timeSlot)" style="background-color: rgba(240, 0, 0, 0.3)">Pending</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'feedback-requested'"  style="background-color: rgba(240, 0, 0, 0.3)">Feedback</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'confirmed'" ng-click="cancelTimeslot(dayAfterTomorrow, $index, timeSlot)" style="background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.buyersAgent}}</div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'completed'" style="background-color: rgba(240, 0, 0, 0.3)">Completed</div>
+    </div>
+</div>
+<div ng-show="showMe" class="addListingButton">
+    <div class="fa-circl ">&#xf111;</div>
+    <div class="arrowRight ">&#xf04e;</div>
+</div>

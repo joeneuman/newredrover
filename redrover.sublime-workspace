@@ -1,0 +1,1264 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lisi",
+				"listing"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"re",
+				"req"
+			],
+			[
+				"sen",
+				"senderNum"
+			],
+			[
+				"phon",
+				"phoneNumber"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"phoneNu",
+				"phoneNumTest"
+			],
+			[
+				"List",
+				"ListingID"
+			],
+			[
+				"agent",
+				"agentMLSListings"
+			],
+			[
+				"newLi",
+				"newListingSave"
+			],
+			[
+				"lis",
+				"listingCtrl"
+			],
+			[
+				"pass",
+				"passwordCheckHolder"
+			],
+			[
+				"pas",
+				"passwordCheckHolder"
+			],
+			[
+				"send",
+				"sendStatus"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"b",
+				"body"
+			],
+			[
+				"twi",
+				"twilioNumber"
+			],
+			[
+				"new",
+				"newShowingRequest"
+			],
+			[
+				"li",
+				"listingAgent"
+			],
+			[
+				"listing",
+				"listingAgent"
+			],
+			[
+				"buyers",
+				"buyersAgentSave"
+			],
+			[
+				"list",
+				"listingAgent"
+			],
+			[
+				"buy",
+				"buyersAgentSave"
+			],
+			[
+				"time",
+				"timeSlotsUnavailable"
+			],
+			[
+				"slo",
+				"slotUnavailable"
+			],
+			[
+				"sed",
+				"send"
+			],
+			[
+				"tod",
+				"today"
+			],
+			[
+				"toda",
+				"todayHolder"
+			],
+			[
+				"sho",
+				"showingIndex"
+			],
+			[
+				"today",
+				"todayHolder"
+			],
+			[
+				"get",
+				"getDay"
+			],
+			[
+				"comp",
+				"completedShowings"
+			],
+			[
+				"show",
+				"showingSave"
+			],
+			[
+				"showing",
+				"showingTime"
+			],
+			[
+				"getM",
+				"getMonth"
+			],
+			[
+				"tim",
+				"timeFeedbackRequested"
+			],
+			[
+				"u",
+				"userToEdit"
+			],
+			[
+				"ph",
+				"phoneNum"
+			],
+			[
+				"phone",
+				"phoneNum"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"findB",
+				"findById"
+			],
+			[
+				"sel",
+				"sellerSave"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"listi",
+				"listing"
+			],
+			[
+				"ne",
+				"nextShowing"
+			],
+			[
+				"timeSlo",
+				"timeSlotsUnavailable"
+			],
+			[
+				"timeS",
+				"timeSlotUnavailable1"
+			],
+			[
+				"fee",
+				"feedback-requested"
+			],
+			[
+				"fe",
+				"feedback-requested"
+			],
+			[
+				"feed",
+				"feedback-requested"
+			],
+			[
+				"pa",
+				"pastTime"
+			],
+			[
+				"right",
+				"rightNow"
+			],
+			[
+				"saved",
+				"savedListing"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"log",
+				"login"
+			],
+			[
+				"av",
+				"availableShowingTimes"
+			],
+			[
+				"find",
+				"findById"
+			],
+			[
+				"Li",
+				"Listing"
+			],
+			[
+				"seller",
+				"sellerSave"
+			],
+			[
+				"se",
+				"sellerSave"
+			],
+			[
+				"sell",
+				"sellerSave"
+			],
+			[
+				"requ",
+				"requestCode"
+			],
+			[
+				"rig",
+				"rightNow"
+			],
+			[
+				"clear",
+				"clearSellerRequestQueue"
+			],
+			[
+				"sellerRe",
+				"SellerRequestQueue"
+			],
+			[
+				"mo",
+				"mongoose"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"complete",
+				"completedShowings"
+			],
+			[
+				"compl",
+				"completedShowings"
+			],
+			[
+				"com",
+				"completedShowings"
+			],
+			[
+				"can",
+				"cancelTimeslot"
+			],
+			[
+				"listin",
+				"listingSave"
+			],
+			[
+				"findByIdAnd",
+				"findByIdAndRemove"
+			],
+			[
+				"ava",
+				"availableShowingTimesIndex"
+			],
+			[
+				"c",
+				"confirmed"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"sh",
+				"showing"
+			],
+			[
+				"con",
+				"confirmed"
+			],
+			[
+				"mon",
+				"morningHourCutoff"
+			],
+			[
+				"set",
+				"setInterval"
+			],
+			[
+				"request",
+				"requestCount"
+			],
+			[
+				"ti",
+				"timeSlot"
+			],
+			[
+				"err",
+				"errorMessage"
+			],
+			[
+				"ema",
+				"emailChecker"
+			],
+			[
+				"emai",
+				"emailChecker"
+			],
+			[
+				"pho",
+				"phoneNumHolder"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"date",
+				"date1_1"
+			],
+			[
+				"pre",
+				"prevClick"
+			],
+			[
+				"twilio",
+				"twilioNumber"
+			],
+			[
+				"bu",
+				"BuyersAgent"
+			],
+			[
+				"day",
+				"dayAfterTomorrow"
+			],
+			[
+				"fin",
+				"findById"
+			],
+			[
+				"val",
+				"val4"
+			],
+			[
+				"va",
+				"val2"
+			],
+			[
+				"use",
+				"userSvc"
+			],
+			[
+				"ps",
+				"passwordCheck"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"Stre",
+				"StreetDirectionSfx"
+			],
+			[
+				"St",
+				"StreetDirectionPfx"
+			],
+			[
+				"ML",
+				"MLSListing"
+			],
+			[
+				"Mls",
+				"MLSListing"
+			],
+			[
+				"M",
+				"MLSListing"
+			],
+			[
+				"MLS",
+				"MLSIdentifier"
+			],
+			[
+				"mls",
+				"mlsId"
+			],
+			[
+				"agen",
+				"agentMLSListings"
+			],
+			[
+				"showin",
+				"showingTime"
+			],
+			[
+				"am",
+				"amPm"
+			],
+			[
+				"cre",
+				"createNewListing"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"po",
+				"phoneNumTest"
+			],
+			[
+				"tw",
+				"twilioCtrl"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ma",
+				"maxlength	Attr"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"backgro",
+				"background-size"
+			],
+			[
+				"im",
+				"imageurl"
+			],
+			[
+				"loat",
+				"loadDate"
+			],
+			[
+				"cal",
+				"calendar"
+			],
+			[
+				"full",
+				"fullCalendar"
+			],
+			[
+				"render",
+				"renderCalender"
+			],
+			[
+				"ui",
+				"uiCalendarConfig"
+			],
+			[
+				"app",
+				"appendFile"
+			],
+			[
+				"pro",
+				"properties"
+			],
+			[
+				"pop",
+				"populate"
+			],
+			[
+				"spac",
+				"space-between"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "public/views/seller/sellerViewTempt.html",
+			"settings":
+			{
+				"buffer_size": 5424,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/views/seller/sellerViewCtrl.js",
+			"settings":
+			{
+				"buffer_size": 13671,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/services/listingSvc.js",
+			"settings":
+			{
+				"buffer_size": 4371,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/index.js",
+			"settings":
+			{
+				"buffer_size": 14814,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/controllers/twilioCtrl.js",
+			"settings":
+			{
+				"buffer_size": 43856,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/controllers/showingCtrl.js",
+			"settings":
+			{
+				"buffer_size": 6281,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/controllers/listingCtrl.js",
+			"settings":
+			{
+				"buffer_size": 19428,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles/sass",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/addAgent",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/addListing",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/admin",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/billing",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/contactInfo",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/editListing",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/editProfile",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/forgotPassword",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/listing",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/listingAgent",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/login",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/mls",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/seller",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showingRequest",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showingRequest2",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showings",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/signupTwilioNumber",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/splash",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/controllers",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/models"
+	],
+	"file_history":
+	[
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showingRequest2/showReq2Ctrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services/twilioSvc.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/listingAgent/laCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/models/userModel.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/public/zf2/assets/event/css/index.css",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/.gitignore",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/listingAgent/laTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/index.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/controllers/userCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/controllers/listingCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/mls/mlsTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/addAgent/addAgentCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/addAgent/addAgentTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/mls/mlsCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services/userSvc.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/signupTwilioNumber/signupTwilioNumberTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/signupTwilioNumber/signupTwilioNumberCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services/authService.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/routes.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/controllers/twilioCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/controllers/showingCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/controllers/stripeCtrl.server.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services/listingSvc.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/controllers/adminCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/editProfile/editProfileTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/editProfile/editProfileCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/changePassword/changePasswordTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/changePassword/changePasswordCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/forgotPassword/forgotPasswordTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/forgotPassword/forgotPasswordCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/login/logInTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/models/sellerModel.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/models/listingModel.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showingRequest2/showReq2Tempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/login/logInCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/seller/sellerViewCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/seller/sellerViewTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showingRequest/showReqCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/models/buyersAgentModel.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showingRequest/showReqTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/models/showingModel.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles/sass/style.sass",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services/showingSvc.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/to do.txt",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles/sass/forms.sass",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/editListing/editListingCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/editListing/editListingTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/listing/listingCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/contactInfo/contactInfoCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/billing/billingCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/admin/adminCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/foodTruck/index.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/foodTruck/server/controllers/truckCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/showings/showCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles/style.css",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/directiveViews/feedbackTmpl.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/splash/splashTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/splash/splashCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/server/models/sellerRequestQueueModel.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/index.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/bower.json",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/app.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/package.json",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/foodTruck/public/scripts/directives/editProfileDir.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/node_modules/mongoose/examples/population/population-of-multiple-existing-docs.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/foodTruck/server/controllers/userCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/foodTruck/server/models/userModel.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services/stripeSvc.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/seller/sellerCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/seller/sellerTmpt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/services/modalService.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles/sass/addAgent.sass",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles/sass/login.sass",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/listing/listingTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/addListing/addListingCtrl.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/views/addListing/addListingTempt.html",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/bower_components/angular-payments/src/validate.js",
+		"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/bower_components/angular-payments/src/form.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/public/homer/bower_components/angular-ui-calendar/src/calendar.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/public/homer/styles/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/application/modules/BackOffice/controllers/IndexController.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/application/modules/BackOffice/layout/homer/default.phtml",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/public/js/angular/app.js",
+		"/Applications/XAMPP/xamppfiles/etc/extra/httpd-vhosts.conf",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/public/index.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/vendor/autoload.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/index.php",
+		"/Applications/XAMPP/xamppfiles/etc/php.ini",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/scripts/bootstrap.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/phinx.yml",
+		"/Applications/XAMPP/xamppfiles/htdocs/ZendFramework1/library/Zend/Db/Statement/Pdo.php",
+		"/Applications/XAMPP/xamppfiles/htdocs/turnkey/log/application_log",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/css/style.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/js/app.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/js/mainSvc.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/js/mainCtrl.js",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/views/messageDirectiveTmpl.html",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/module/Application/view/layout/layout.phtml",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/module/Application/view/application/index/index.phtml",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/css/angular-carousel.css",
+		"/Applications/XAMPP/xamppfiles/htdocs/Tutorials/public/js/angular-carousel.js",
+		"/Users/paulbrimley/Downloads/Tutorials/public/js/mainSvc.js",
+		"/Users/paulbrimley/Downloads/Tutorials/public/css/style.css",
+		"/Users/paulbrimley/Downloads/Tutorials/public/js/mainCtrl.js",
+		"/Users/paulbrimley/Downloads/Tutorials/public/js/app.js",
+		"/Users/paulbrimley/Downloads/Tutorials/module/Application/view/application/index/index.phtml",
+		"/Users/paulbrimley/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/paulbrimley/Library/Application Support/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
+		"/Users/paulbrimley/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/Users/paulbrimley/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/paulbrimley/Library/Application Support/Sublime Text 3/Packages/User/Emmet.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/",
+			"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles",
+			"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/",
+			"/Users/paulbrimley/Documents/PaulBrimley-Repository/redrover/public/styles",
+			"/Applications/XAMPP/htdocs/turnkey",
+			"/Applications/XAMPP/xamppfiles/htdocs/turnkey"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sendRequestToSellerFromQueue",
+			"listingAgent",
+			"cancelTimeslot",
+			"cancel",
+			"return",
+			"error",
+			"getListingsFromServer",
+			"Thanks for the message",
+			"error sending cancellation:",
+			"error sending",
+			"Server Error",
+			"passwordCheck",
+			".user",
+			"$scope.currentUser",
+			"$scope.test",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"User",
+			"user",
+			"resetPassword",
+			"canceled",
+			"buyersAgentSave",
+			"findByIdAndREmove",
+			"today",
+			"sendRequestToSeller",
+			"addRequestToSellersQueue",
+			"/showing/populateDatabaseWithShowings",
+			"listing.showings.push(",
+			"completedShowings",
+			"listing",
+			"canceled",
+			"cance",
+			"900000",
+			"buyersAgent",
+			"listing",
+			"showingSave",
+			"showing",
+			"seller",
+			"sellerSave",
+			"seller",
+			"timeSlot",
+			"time.minutes",
+			"plcholder2",
+			"input-block-level",
+			"input",
+			"showing",
+			"subString",
+			"seller",
+			"buyersAgentPopulated",
+			"buyersAgentSave",
+			"buyersAgent",
+			"dayArray",
+			"span",
+			"seller",
+			"22",
+			"21",
+			"8",
+			"timeSlotUnavailable1",
+			"autoCancelMorningNightTimes",
+			"timeSlotUnavailable1",
+			"container",
+			"strong",
+			"div",
+			"navbar",
+			"buttonContainer",
+			"discrip",
+			"descrip",
+			"space",
+			"$scope.timeSelected",
+			"$scope.timeselected",
+			"interval",
+			"this one",
+			"dayArray",
+			"twilioCtrl",
+			"var options = {",
+			"sendRequestToSeller",
+			"twilioCtrl",
+			"sendRequestToSeller",
+			"seller.queue",
+			"div",
+			"populate",
+			"show",
+			"feedbackSection",
+			"animate-show-fade",
+			"showFeedback",
+			"backToLa",
+			"black",
+			"editListing",
+			"/listing/editListing",
+			"timeSlot",
+			".populate",
+			"rgb(194, 184, 172)",
+			"'after'",
+			"tomorrow",
+			"today",
+			"Today",
+			"today",
+			"tomorrow",
+			"today",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing",
+			"Showing",
+			"showing"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/views/seller/sellerViewTempt.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5417,
+								5417
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1096.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "public/views/seller/sellerViewCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11424,
+								11424
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3902.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/services/listingSvc.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								805,
+								805
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "server/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14814,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9199,
+								9199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4398.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "server/controllers/twilioCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								40098,
+								40098
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 15185.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "server/controllers/showingCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5374,
+								5374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1903.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "server/controllers/listingCtrl.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18266,
+								18266
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 6428.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.468922574627,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.554433247041,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "redrover.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 3,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 186.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

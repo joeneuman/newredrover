@@ -1,0 +1,29 @@
+<header>
+  <a ui-sref="listingagent" class="backToLa">&#xf0a8;</a>
+  <div class="heading">{{listingToEdit.address}}</div>
+</header>
+<div class="spacingForm"></div>
+<div class="centeredColumn">
+  <form>
+      <div class="span3">
+          <label for="">Seller First Name</label>
+          <input type="text" class="input-block-level" ng-model="seller.sellerName.firstName"
+                 placeholder="Enter first name..." required/>
+      </div>
+      <div class="span3">
+          <label for="">Seller Phone Number</label>
+          <!-- <input id="phoneNum" type="text" class="input-block-level" placeholder="(XXX) XXX-XXXX" ng-keydown="phoneNumCheck($event)" ng-keyup="phoneNumCheck2($event)" ng-model="user.phoneNum" size="14" maxlength="14" required/> -->
+          <div class="phoneNumInputGroup">
+              <span class="phoneNumInputGroupLabel">1&nbsp;</span><input id="phoneNum" ng-model="user.phoneNum" type="text" ng-keyup="phoneNumCheckTest($event)" placeholder="XXXXXXXXXX" maxlength="10" required/>
+          </div>
+      </div>
+    <br>
+    
+    <div class="centerTheButton">
+      <button ng-hide="listingToEdit.seller" ng-click="creatingSeller(seller)">Create Seller</button>
+      <button ng-show="listingToEdit.seller" ng-click="creatingSeller(seller)">Update Seller</button>
+    </div>
+    <div>{{message}}</div>
+    <div class="space"></div>
+  </form>
+</div>

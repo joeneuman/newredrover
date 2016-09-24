@@ -1,0 +1,46 @@
+<header>
+  <a ui-sref="showingrequest({listingId: listingId})" class="backToLa">&#xf0a8;</a>
+  <div class="heading">{{listing.address}}</div>
+</header>
+
+<div class="spacingForm"></div>
+<!-- <div class="spacingFirstNgRepeat"></div> -->
+<div class="centeredColumn">
+  <!--<div ng-show="modalShow" class="confirmationCodeInputAreaModal">
+
+    <form action="" class="confirmationCodeInputAreaForm">
+      <div>A code has been sent to the number you provided. If you do not see the code within five minutes, please try again.</div>
+      <br/>
+      <input id="test" size="4" type="number" maxlength="4" ng-keypress="isNumberKey($event)" ng-keyup="logIt()" ng-model="requestCode" style="background: #FFF; padding: 0 0 0 5px">
+      <div class="centerTheButton">
+        <button ng-click="confirmShowingRequest(requestCode)">Confirm</button>
+      </div>
+      <div>{{message}}</div>
+      <div class="space"></div>
+    </form>
+  </div>-->
+  <h2>You are requesting a showing for {{timeSlot | date: 'shortDate'}} at {{timeSlot | date: 'shortTime'}}.</h2>
+  <br><br><br><br>
+  <form>
+    <div></div>
+    <input type="text" class="inputText1" ng-model="showing.name" required/>
+    <span class="plcholder1">Person showing the home</span>
+    <!-- <input id="phoneNum" type="text" class="inputText2" ng-keydown="phoneNumCheck($event)" ng-keyup="phoneNumCheck2($event)" ng-model="showing.phoneNumber" size="14" maxlength="14" required/> -->
+    <div class="phoneNumInputGroup">
+        <span class="phoneNumInputGroupLabel">1&nbsp;</span>
+        <input id="phoneNum" class="inputText9" ng-model="showing.phoneNumber" type="text" ng-keyup="phoneNumCheckTest($event)" maxlength="10" required/>
+        <span class="plcholder9">Texting Number</span>
+    </div>
+
+    <div>
+      
+      <br/>
+      <br/>
+      <!--When you click 'Request Showing', a text message will come through to your phone with a 4 digit code. Please enter the code in the modal that pops up to confirm your showing request. If you do not receive a text within 5 minutes, please make another request.</div>-->
+    <div class="centerTheButton">
+      <button ng-click="confirmShowingRequest(showing)">Confirm</button>
+      <!--<button ng-click="requestShowing(showing)">Request Showing</button>-->
+    </div>
+    <div>{{message}}</div>
+  </form>
+</div>

@@ -1,0 +1,206 @@
+<body>
+
+<nav class="centeredColumn" id="menu">
+    <!--<h2 class="centerTheButton">MENU</h2>-->
+    <div class="centeredColumn">
+
+        <!--<br><br><br>-->
+        <li ng-click="billing()"><a>Billing</a></li>
+        <!--<li ui-sref="editprofile"><a>Edit Profile</a></li>-->
+        <li ng-click="editProfile()"><a>Edit Profile</a></li>
+        <li ng-click="checkToggleEditMlsDir()"><a>Edit MLS</a></li>
+
+        <li ng-click="changePassword()"><a href="">Change Password</a></li>
+        <li ng-click="logOut()"><a>Log Out</a></li>
+    </div>
+</nav>
+
+<main id="panel">
+    <main class="mainBackGround">
+        <header>
+            <!--<div class="hamberger" ng-click="billing()">&#xf0c9;</div>-->
+            <!--<div class="toggle-button">☰</div>-->
+            <div class="toggle-button hamberger">&#xf0c9;</div>
+
+            <div class="companyName">{{companyName}}</div>
+            <input class="littleSearch" placeholder="&#xf002;" type="text " ng-model="query ">
+            <script>
+                // Changes cursor to a pointer icon for littleSearch input box
+                $('input:file').each(function () {
+                    var $input = $(this);
+                    $input.before($('<div>').height($input.height()).width($input.width()).css({
+                        cursor: 'pointer',
+                        position: 'absolute',
+                        zIndex: $input.css('z-index')
+                    }).click(function () {
+                        $(this).hide();
+                        $input.click();
+                        $(this).show();
+                    }));
+                });
+            </script>
+        </header>
+
+        <!--<div id="laWrapper" class="centeredColumn">-->
+
+        <!--<div class="centeredColumn">-->
+        <div class="spacingFirstNgRepeat "></div>
+        <!--<button ng-click="toggleEditMlsDir()">toggleEditMlsDir</button>-->
+        <div class="containerRepeat " ng-repeat="listing in listings | filter:query ">
+
+            <div class="listingInfo ">
+
+                <div class="listingInfoImg">
+                    <img ng-click="list(listing._id)" src="http://lorempixel.com/400/200/city"
+                         ng-src="{{listing.picture}} ">
+                </div>
+
+                <div class="listingInfoDescrip">
+                    <div class="centerTheButton"><span ng-click="list(listing._id)">
+                        {{listing.address}}
+                        {{listing.StreetDirectionPfx}}
+                        {{listing.StreetName}}
+                        {{listing.StreetSuffix}}
+                        {{listing.Unit}}
+                    </span></div>
+                    <!--<br>-->
+                    <div class="centerTheButton"><span ng-click="list(listing._id)">{{listing.city}}</span>
+                    </div>
+                    <!--<br>-->
+                    <div class="centerTheButton"><span ng-click="list(listing.listingId, listing)">
+                        {{listing.price | currency:"$ ":0}} |
+
+                        {{listing.listingId}}
+                    </span></div>
+                    <!-- <div style="height: 2vw; visibility:hidden; ">4</div> -->
+                    <!-- Adds half a horizontal space -->
+                    <div class="centerTheButton"><strong>
+                        <span ng-show="listing.seller" ng-click="sellerView(listing._id)" class="sellerName "
+                              ng-click="showings(listing._id)">{{listing.seller.sellerName.firstName}}:
+                        </span>
+                        <br/>
+                    </strong></div>
+                    <div class="centerTheButton"><a ng-show="listing.seller"
+                                                    href="tel:+1{{listing.seller.phoneNum}} ">{{listing.seller.phoneNum
+                        |
+                        tel}} </a></div>
+                </div>
+
+                <div class="listingInfoButtonContainer ">
+                    <div class="showRequestButton " ng-click="showRequest(listing._id, listing.seller) ">
+                        Show
+                    </div>
+                    <!--<div class="editListing " ng-click="editListing(listing._id) ">Edit</div>-->
+                    <div class="editListing " ng-click="editListing(listing._id)">Details</div>
+                </div>
+            </div>
+
+            <div ng-show="listing.upcommingShowings.length > 0" class="showing">
+                <div>Upcoming Showings:</div>
+                <div ng-repeat="showing in listing.upcommingShowings | orderBy: 'timeSlot'">
+                    <span>{{showing.dayString}} {{showing.timeSlot | date: 'shortTime'}} </span>
+                    <span>{{showing.buyersAgent.name}}: </span>
+                    <a href="tel:+1{{listing.nextShowing.buyersAgent.phoneNum}} ">{{showing.buyersAgent.phoneNum
+                        |
+                        tel}}</a>
+                    <!-- <span>{{showing.buyersAgent.name}} </span><a  href="tel:+1{{listing.nextShowing.buyersAgent.phoneNum}} ">{{showing.buyersAgent.phoneNum | tel}}</a><span> - {{showing.timeSlot | date: 'shortDate'}} - {{showing.timeSlot | date: 'shortTime'}}</span> -->
+                </div>
+            </div>
+            <!-- <div ng-show="listing.nextShowing" class="showing">
+                Next Showing: <span>{{listing.nextShowing.buyersAgent.name}} </span><a  href="tel:+1{{listing.nextShowing.buyersAgent.phoneNum}} ">{{listing.nextShowing.buyersAgent.phoneNum | tel}}</a><span> - {{listing.nextShowing.timeSlot | date: 'shortDate'}} - {{listing.nextShowing.timeSlot | date: 'shortTime'}}</span>
+            </div> -->
+        </div>
+        <div class="space"></div>
+        <!--</div>-->
+        <!--</div>-->
+    </main>
+</main>
+
+
+<script>
+    /*var slideout = new Slideout({
+     'panel': document.getElementById('panel'),
+     'menu': document.getElementById('menu'),
+     'padding': 330,
+     'tolerance': 70,
+     'side': 'left'
+     });*/
+    var slideout = new Slideout({});
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function () {
+        checkToggleDesktop("window", $(window).width())
+//        slideout.toggle();
+    });
+
+    var checkToggleDesktop = function (ele, w) {
+        console.log(w);
+        console.log(ele);
+        //element on screen but not showing
+        //every time the button is clicked it checks the width of the window.
+        //if width is wider than 800px toggleView function runs.
+        //changes button to button that changes toggle for that directive.
+        if (w >= 800) {
+            slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 730,
+                'tolerance': 70,
+                'side': 'left'
+            })
+        } else {
+            slideout = new Slideout({
+                'panel': document.getElementById('panel'),
+                'menu': document.getElementById('menu'),
+                'padding': 330,
+                'tolerance': 70,
+                'side': 'left'
+            });
+        }
+        slideout.toggle();
+    }
+
+    /* $(".toggle-button").click(function () {
+     console.log('toggle button pressed');
+     checkToggleDesktop("window", $(window).width());
+     });*/
+
+
+</script>
+
+</body>
+
+
+<!--
+<div class="centeredColumn">
+    <div class="centerTheButton">Please select your MLS</div>
+    <br>
+    &lt;!&ndash;<div class="centerTheButton">
+        <select ng-init="agent.mls = options[0].value" ng-model="agent.mls" ng-options="option.name for option in options">
+            <option value="1">WCBR</option>
+            <option value="2">Wasatch Front</option>
+            <option value="3">Iron County</option>
+        </select>
+    </div>&ndash;&gt;
+    <div class="centerTheButton">
+        <select ng-model="user.mls" class="selectMls form-control">
+            <option value="1">WCBR</option>
+            <option value="2">Wasatch Front</option>
+            <option value="3">Iron County</option>
+        </select>
+    </div>
+    &lt;!&ndash;<div class="centerTheButton"><button ng-click="editUser(agent._id, agent)">submit MLS</button></div>&ndash;&gt;
+    <br>
+    <br>
+    <div>
+        <label>Agent Id Number</label>
+        <input type="text" ng-model="user.agentId" placeholder="Agent Id">
+    </div>
+
+    <div class="centerTheButton">
+
+        <button ng-click="editUserAgentId(agent)">Sign Up!</button>
+
+    </div>
+
+    &lt;!&ndash;<div class="centerTheButton"><button ng-click="skip()">NEXT</button></div>&ndash;&gt;
+</div>-->

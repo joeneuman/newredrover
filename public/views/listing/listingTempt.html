@@ -1,0 +1,69 @@
+<header>
+    <a ui-sref="listingagent" class="backToLa">&#xf0a8;</a>
+
+    <div class="heading">{{thisListing.address}}</div>
+
+</header>
+
+<div class="spacingFirstNgRepeat "></div>
+<div class="containerRepeat">
+    <div class="lisitngContainer">
+
+
+        <div class="imageAddress">
+            <!--<img src="http://lorempixel.com/400/200/city" ng-src="{{listing.avatar}} ">-->
+            <img ng-src="{{thisListing.picture}} ">
+            <div class="addressPrice">
+                <span class="mdFont">{{thisListing.city}}, {{thisListing.state}} {{thisListing.postalCode}}</span><br>
+                <span class="smFont">{{thisListing.totalBedRooms}} beds • {{thisListing.totalBathRooms}} baths
+                    <!--2 baths--> • {{thisListing.mainSqFt | number}} sqft.<!--1,234 sqft--></span><br>
+                <span class="bFont">{{thisListing.price | currency:"$ ":0}} </span>
+            </div>
+        </div>
+        <!--<div style="height: 2vw; visibility:hidden; ">4</div>-->
+        <!-- Adds half a horizontal space -->
+        <div class="twoLists smFont">
+            <ul>
+                <li><span>YEAR BUILT: </span>{{thisListing.yearBuilt}}</li>
+                <li><span>GARAGE CAPACITY: </span>{{thisListing.garageCapacity}}</li>
+                <li><span>LOT ACRES: </span>{{thisListing.lotAcres}}</li>
+                <li><span>ZONING: </span>{{thisListing.zoning}}</li>
+                <li><span>EXTERIOR: </span>{{thisListing.exterior}}</li>
+                <li><span>GARAGE PARKING: </span>{{thisListing.garageParking}}</li>
+                <li><span>AIR CONDITIONING: </span>{{thisListing.airConditioning}}</li>
+                <li><span>TAX ID: </span>{{thisListing.taxId}}</li>
+                <li><span>BASEMENT SqFt:</span> {{thisListing.basementSqFt}}</li>
+                <li><span>GARAGE TYPE: </span>{{thisListing.garageType}}</li>
+                <li><span>HEATING: </span>{{thisListing.heating}}</li>
+                <li><span>LEVELS: </span>{{thisListing.levels}}</li>
+                <li><span>CLASS: </span>{{thisListing.listingClass}}</li>
+
+            </ul>
+            <!--<ul>
+                <li>Tax ID: {{thisListing.taxId}}</li>
+                <li>Basement SqFt{{thisListing.basementSqFt}}</li>
+                <li>Garage Type: {{thisListing.garageType}}</li>
+                <li>Heating: {{thisListing.Heating}}</li>
+                <li>Levels: {{thisListing.levels}}</li>
+                <li>Class: {{thisListing.listingClass}}</li>
+            </ul>-->
+
+        </div>
+
+        <div class="mdFont">Public Remarks:</div>
+        <div class="smFont">{{thisListing.publicRemarks}}  <!--Gorgeous mountain & golf course VIEWS! Rare fully fenced & over-sized lot w/ no homes in
+            back! Large windows w/ natural light,granite, tile, tall ceilings, gas fireplace, large rooms, 3rd bdrm is
+            actually an OFFICE w/ built in cabinets, lots of counter-top space in kitchen, custom cabinets, double
+            vanity & jetted tub in master, courtyard w/ gate. Beautiful subdivision w/ nice yards & sidewalks
+        </div>-->
+            <br>
+            <div class="mdFont">Private Remarks:</div>
+            <div class="smFont">{{thisListing.privateRemarks}}<!--Gorgeous mountain & golf course VIEWS! Rare fully fenced & over-sized lot w/ no homes in
+            back! Large windows w/ natural light,granite, tile, tall ceilings, gas fireplace, large rooms, 3rd bdrm is
+            actually an OFFICE w/ built in cabinets, lots of counter-top space in kitchen, custom cabinets, double
+            vanity & jetted tub in master, courtyard w/ gate. Beautiful subdivision w/ nice yards & sidewalks-->
+            </div>
+
+        </div>
+    </div>
+</div>

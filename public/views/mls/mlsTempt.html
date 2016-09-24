@@ -1,0 +1,33 @@
+<div class="centeredColumn">
+    <div class="centerTheButton">Please select your MLS</div>
+    <br>
+    <!--<div class="centerTheButton">
+        <select ng-init="agent.mls = options[0].value" ng-model="agent.mls" ng-options="option.name for option in options">
+            <option value="1">WCBR</option>
+            <option value="2">Wasatch Front</option>
+            <option value="3">Iron County</option>
+        </select>
+    </div>-->
+    <div class="centerTheButton">
+        <select ng-model="user.mls" class="selectMls form-control">
+            <option value="1">WCBR</option>
+            <option value="2">Wasatch Front</option>
+            <option value="3">Iron County</option>
+        </select>
+    </div>
+    <!--<div class="centerTheButton"><button ng-click="editUser(agent._id, agent)">submit MLS</button></div>-->
+    <br>
+    <br>
+    <div>
+        <label>Agent Id Number</label>
+        <input type="text" ng-model="user.agentId" placeholder="Agent Id">
+    </div>
+
+        <div class="centerTheButton">
+
+            <button ng-click="editUserAgentId(agent)">Sign Up!</button>
+
+        </div>
+    <div style="color: red">{{errorMessage}}</div>
+    <!--<div class="centerTheButton"><button ng-click="skip()">NEXT</button></div>-->
+</div>

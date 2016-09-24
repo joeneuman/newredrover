@@ -1,0 +1,47 @@
+
+<div class="container">
+
+    <div class="row">
+        <div class="span4 offset4">
+            <div class="row">
+
+                <div class="span4">
+                    <h3>Sign Up!</h3>
+                </div>
+
+                <form stripe-form="handleStripe" name="signUp">
+
+                    <div class="span3">
+                        <label for="">First Name</label>
+                        <input type="text" ng-model="user.firstName"/>
+                    </div>
+                    <div class="span3">
+                        <label for="">Last Name</label>
+                        <input type="text" class="input-block-level" ng-model="user.lastName"/>
+                    </div>
+
+                    <div class="span3">
+                        <label for="">Last Name</label>
+                        <input type="text" class="input-block-level" ng-model="user.lastName"/>
+                    </div>
+
+                    <div class="span3">
+                        <label for="">Last Name</label>
+                        <input type="text" class="input-block-level" ng-model="user.lastName"/>
+                    </div>
+
+                    <div class="span3">
+                        <label for="">Last Name</label>
+                        <input type="text" class="input-block-level" ng-model="user.lastName"/>
+                    </div>
+
+                    <div class="span4">
+                        <button type="submit" class="btn btn-primary btn-large" ng-click="createUser(user)">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>

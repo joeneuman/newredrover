@@ -1,0 +1,168 @@
+@import mixins
+@import variables
+
+.spacingForm
+  height: 20vw
+
+.centeredColumn
+  width: 80%
+  height: 100%
+  margin: auto
+  padding-top: 3vw
+  font-size: 4vw
+
+.centeredColumn input
+  width: 100%
+  background-color: $white
+  height: 9vw
+  margin-bottom: 7vw
+  padding: 3vw
+  font-size: 5vw
+  border: .5vw solid
+  border-radius: 1.5vw
+
+
+input:focus
+  border: none
+  outline: none
+  box-shadow: 0 0 3px 3px $alert
+
+input:disabled
+  background-color: rgb(200, 200, 200)
+
+button
+  font-size: 5vw
+  padding: 0 2vw
+  margin: 4vw 0
+  height: 10vw
+  border: .5vw solid $stable
+  border-radius: 1.5vw
+  background-color: $dark
+  color: $white
+
+button:hover
+  border: 1vw solid $dark
+  background-color: $stable
+
+.title
+  top: 0
+  position: fixed
+  display: flex
+  justify-content: center
+  height: 15vw
+  line-height: 15vw
+  width: 100%
+  background: $dark
+  color: $white
+  padding: 1vw
+  text-align: center
+
+// .ng-touched
+//   position: absolute
+
+.inputText
+  width: 200vw
+  height: 20vw
+
+.plcholder1
+  @include plcholder
+  left: 13vw
+  top: 24vw
+
+.inputText1:focus ~ .plcholder1,
+.inputText1:not(:focus):valid ~ .plcholder1
+  @include floating-label
+  left: 15vw
+  top: 17.3vw
+
+.plcholder2
+  @include plcholder
+  left: 13vw
+  top: 40vw
+
+.inputText2:focus ~ .plcholder2,
+.inputText2:not(:focus):valid ~ .plcholder2
+  @include floating-label
+  left: 15vw
+  top: 33.3vw
+
+.plcholder3
+  @include plcholder
+  left: 13vw
+  top: 56vw
+
+.inputText3:focus ~ .plcholder3,
+.inputText3:not(:focus):valid ~ .plcholder3
+  @include floating-label
+  left: 15vw
+  top: 49.3vw
+
+.plcholder4
+  @include plcholder
+  left: 13vw
+  top: 72vw
+
+.inputText4:focus ~ .plcholder4,
+.inputText4:not(:focus):valid ~ .plcholder4
+  @include floating-label
+  left: 15vw
+  top: 65.3vw
+
+.plcholder5
+  @include plcholder
+  left: 13vw
+  top: 88vw
+
+.inputText5:focus ~ .plcholder5,
+.inputText5:not(:focus):valid ~ .plcholder5
+  @include floating-label
+  left: 15vw
+  top: 81.5vw
+
+.plcholder6
+  @include plcholder
+  left: 13vw
+  top: 104vw
+
+.inputText6:focus ~ .plcholder6,
+.inputText6:not(:focus):valid ~ .plcholder6
+  @include floating-label
+  left: 15vw
+  top: 97.5vw
+
+.plcholder7
+  @include plcholder
+  left: 13vw
+  top: 120vw
+
+.inputText7:focus ~ .plcholder7,
+.inputText7:not(:focus):valid ~ .plcholder7
+  @include floating-label
+  left: 15vw
+  top: 113.3vw
+
+.plcholder8
+  @include plcholder
+  left: 13vw
+  top: 136vw
+
+.inputText8:focus ~ .plcholder8,
+.inputText8:not(:focus):valid ~ .plcholder8
+  @include floating-label
+  left: 15vw
+  top: 129.3vw
+
+.plcholder9
+  @include plcholder
+  left: 17vw
+  top: 40vw
+
+.inputText9:focus ~ .plcholder9,
+.inputText9:not(:focus):valid ~ .plcholder9
+  @include floating-label
+  left: 17vw
+  top: 33.3vw
+
+.centerTheButton
+  display: flex
+  justify-content: center

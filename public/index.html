@@ -1,0 +1,82 @@
+<html lang="en" ng-app="rRApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Red Rover Real Estate</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.css">
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
+    <script src="./bower_components/moment/min/moment.min.js"></script>
+    <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./bower_components/moment/locale/en-au.js"></script>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <!--<link rel="stylesheet" href="./bower_components/angular-bootstrap-datepicker/dist/angular-bootstrap-datepicker.css" />-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+    <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+    <script type="text/javascript">
+        // This identifies your website in the createToken call below
+        Stripe.setPublishableKey('pk_test_CjxQE0bZUDQ0ZEZDkBZcDXM3');
+        // ...
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+
+<main>
+    <ui-view></ui-view>
+</main>
+
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./bower_components/ngFitText/dist/ng-FitText.min.js"></script>
+<script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="./bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<!--<script src="./bower_components/angular-bootstrap-datepicker/dist/angular-bootstrap-datepicker.js"></script>-->
+
+<script src="./bower_components/angular-payments/lib/angular-payments.js"></script>
+<script src="./app.js"></script>
+<script src="./routes.js"></script>
+<script src="./views/addListing/addListingCtrl.js"></script>
+<script src="./views/admin/adminCtrl.js"></script>
+<script src="./views/contactInfo/contactInfoCtrl.js"></script>
+<script src="./views/login/logInCtrl.js"></script>
+<script src="./views/showingRequest/showReqCtrl.js"></script>
+<script src="./views/billing/billingCtrl.js"></script>
+<script src="./views/listingAgent/laCtrl.js"></script>
+<script src="./services/showingSvc.js"></script>
+<script src="./views/addAgent/addAgentCtrl.js"></script>
+<script src="./views/editProfile/editProfileCtrl.js"></script>
+<script src="./services/userSvc.js"></script>
+<script src="./views/editListing/editListingCtrl.js"></script>
+<script src="./services/stripeSvc.js"></script>
+<script src="./services/authService.js"></script>
+<script src="./services/listingSvc.js"></script>
+<script src="./services/twilioSvc.js"></script>
+<script src="./views/signupTwilioNumber/signupTwilioNumberCtrl.js"></script>
+<script src="./views/mls/mlsCtrl.js"></script>
+<script src="./views/showingRequest/showReqCtrl.js"></script>
+<script src="./views/showingRequest2/showReq2Ctrl.js"></script>
+<script src="./views/showings/showCtrl.js"></script>
+<script src="./views/listing/listingCtrl.js"></script>
+<script src="./views/listingAgent/laCtrl.js"></script>
+<script src="./services/showingSvc.js"></script>
+<script src="./views/addAgent/addAgentCtrl.js"></script>
+<script src="./views/editProfile/editProfileCtrl.js"></script>
+<script src="./services/userSvc.js"></script>
+<script src="./views/editListing/editListingCtrl.js"></script>
+<script src="./services/stripeSvc.js"></script>
+<script src="./services/authService.js"></script>
+<script src="./services/listingSvc.js"></script>
+<script src="./services/twilioSvc.js"></script>
+<script src="./views/forgotPassword/forgotPasswordCtrl.js"></script>
+<script src="./views/seller/sellerViewCtrl.js"></script>
+<script src="./views/changePassword/changePasswordCtrl.js"></script>
+<script src="./views/directiveViews/editMls/editMlsDir.js"></script>
+<!--<script src="./directives/showingDir.js"></script>-->
+
+</body>
+
+</html>

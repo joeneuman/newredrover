@@ -1,0 +1,23 @@
+<!--<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+      rel="stylesheet">-->
+<div class="centeredColumn">
+    <div>Please choose an area code for your new Red Rover Phone Number:</div>
+    <br>
+    <div class="span1">
+        <label>Area Code</label>
+        <input type="text" class="input-block-level" ng-model="user.areaCode" required/>
+    </div>
+    <div class="centerTheButton">
+        <button ng-click="getNewNumber(user)">Find Available Numbers</button>
+        &nbsp;&nbsp;
+        <button ng-click="skip()">skip</button>
+    </div>
+    <div class="centerTheButton">SELECT NEW PHONE NUMBER:</div>
+    <div class="centerTheButton" ng-repeat="number in twilioNumbers">
+        <div>
+            <button ng-if="(!user.twilioNumber)" ng-click="purchaseNewNumber({twilioNumber: number.phoneNumber})">{{number.friendlyName}}</button>
+        </div>
+    </div>
+</div>
+
+

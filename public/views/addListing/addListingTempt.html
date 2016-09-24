@@ -1,0 +1,39 @@
+<header>
+
+  <a ui-sref="listingagent" class="backToLa">&#xf0a8;</a>
+  <div class="heading">Add Listing</div>
+</header>
+
+<div class="spacingForm"></div>
+
+<div class="centeredColumn">
+
+  <form>
+    <input type="text" class="inputText1" ng-model="listing.address" required/>
+    <span class="plcholder1">Street Address</span>
+
+    <input ng-model="listing.city" class="inputText2" type="text" required/>
+    <span class="plcholder2">City</span>
+
+    <input ng-model="listing.price" class="inputText3" type="text" required>
+    <span class="plcholder3">Price</span>
+
+    <input ng-model="listing.mlsId" class="inputText4" type="text" required>
+    <span class="plcholder4">MLS Id</span>
+
+    <input ng-model="listing.sellerName" class="inputText5" type="text" required maxlength="10">
+    <span class="plcholder5">First Name</span>
+
+    <input ng-model="listing.sellerPhone" class="inputText6" type="text" required maxlength="12">
+    <span class="plcholder6">Cell Phone #</span>
+
+    <br>
+
+    <div class="centerTheButton">
+      <button ng-click="newListing(listing)">Add Listing</button>
+    </div>
+
+    <div>{{message}}</div>
+
+  </form>
+</div>

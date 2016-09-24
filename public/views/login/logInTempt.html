@@ -1,0 +1,31 @@
+<div class="navbar">
+
+    <button class="btn btn-primary" ng-click="cancel()">Back</button>
+    &nbsp;
+    <button class="btn btn-primary" ng-click="createUser()">Register</button>
+
+</div>
+
+<div>video here</div>
+<div>
+    <div>
+        <form>
+            <div class="centeredColumn">
+            <br>
+            <label>Email</label>
+            <br>
+            <input class="enterUserName" ng-model="user.email" type="text" placeholder="Email" autofocus>
+            <br>
+            <label>Password</label>
+            <br>
+            <input ng-model="user.password" type="password" placeholder="Password">
+            <br>
+            <div style="color: red">{{errorMessage}}</div>
+            <button ng-click="submitLogin(user)">Submit</button>
+                <div><a ui-sref="forgotpassword">Forgot Password</a></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

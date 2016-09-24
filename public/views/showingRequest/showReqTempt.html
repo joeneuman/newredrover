@@ -1,0 +1,129 @@
+<header>
+    <a ng-show="user" ui-sref="listingagent" class="backToLa">&#xf0a8;</a>
+    <div class="heading">{{listing.address}}</div>
+
+</header>
+<div class="spacingFirstNgRepeat "></div>
+
+<div id="show_request" ng-if="loggedIn">
+    <label id="show_request_label" for="show_request_textarea">Copy and Paste on your MLS:</label>
+<textarea name="request" id="show_request_textarea" rows="4" onclick="this.focus(); this.select()"
+          readonly="readonly">&lt;p&gt;&lt;big&gt;To schedule a showing &lt;a href='http://redrover.h8.rs/#/showingrequest/{{listingId}}' target='_blank'&gt;&lt;u&gt;CLICK HERE&lt;/u&gt;&lt;/a&gt;&lt;/big&gt;&lt;/p&gt;
+</textarea>
+    <br>
+</div>
+
+<div>
+                <!--schedule showing for today-->
+    <div class="dayTitle">Today</div>
+
+    <!--repeat over all timeSlots in tomorrow's availableShowingTimes array-->
+    <div class="timeSlot" ng-repeat="timeSlot in availableShowingTimes.Today">
+        <div ng-show="timeSlot.status === 'pastTime'" class="timeSlotInner"
+             style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date :
+            'shortTime'}}
+        </div>
+        <!--if timeSlot.status === "selected" show selected style shaded-->
+        <div ng-show="timeSlot.status === 'selected'" class="timeSlotInner"
+             ng-click="timeSelected('Today', $index, timeSlot)" style="background-color:  rgb(194, 184, 172)">
+            {{timeSlot.timeSlot | date : 'shortTime'}}
+        </div>
+        <!--if timeSlot.status === "available" show: 'available' style nothing-->
+        <div ng-show="timeSlot.status === 'available'" class="timeSlotInner"
+             ng-click="timeSelected('Today', $index, timeSlot)">{{timeSlot.timeSlot | date : 'shortTime'}}
+        </div>
+        <!--if timeSlot.status === "canceled" show: canceled styles line through-->
+        <div ng-show="timeSlot.status === 'canceled'" class="timeSlotInner"
+             style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date :
+            'shortTime'}}
+        </div>
+
+        <!-- this is after the request has been started-->
+
+        <!--if timeslot.status === 'pending' show pending-->
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'pending'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Pending
+        </div>
+        <!--if timeslot.status === 'Feedback' show feedback-->
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'feedback-requested'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Feedback
+        </div>
+        <!--if timeslot.status === 'confirmed' show the buyer'sAgent or buyer's name-->
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'confirmed'"
+             style="background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.buyersAgent}}
+        </div>
+        <!--if timeslot.status === 'Completed' show completed-->
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'completed'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Completed
+        </div>
+    </div>
+            <!--Schedule Showing for tomorrow-->
+    <div class="dayTitle">Tomorrow</div>
+    <!--repeat over all timeSlots in tomorrow's availableShowingTimes array-->
+    <div class="timeSlot" ng-repeat="timeSlot in availableShowingTimes.Tomorrow">
+        <div ng-show="timeSlot.status === 'pastTime'" class="timeSlotInner"
+             style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date :
+            'shortTime'}}
+        </div>
+        <div ng-show="timeSlot.status === 'selected'" class="timeSlotInner"
+             ng-click="timeSelected('Tomorrow', $index, timeSlot)" style="background-color:  rgb(194, 184, 172)">
+            {{timeSlot.timeSlot | date : 'shortTime'}}
+        </div>
+        <div ng-show="timeSlot.status === 'available'" class="timeSlotInner"
+             ng-click="timeSelected('Tomorrow', $index, timeSlot)">{{timeSlot.timeSlot | date : 'shortTime'}}
+        </div>
+        <div ng-show="timeSlot.status === 'canceled'" class="timeSlotInner"
+             style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date :
+            'shortTime'}}
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'pending'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Pending
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'feedback-requested'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Feedback
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'confirmed'"
+             style="background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.buyersAgent}}
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'completed'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Completed
+        </div>
+    </div>
+
+            <!--Schedule Showing for day after tomorrow-->
+    <div class="dayTitle">{{dayAfterTomorrow}}</div>
+    <!--repeat over all timeSlots in dayAfterTomorrow's availableShowingTimes array-->
+    <div class="timeSlot" ng-repeat="timeSlot in availableShowingTimes[dayAfterTomorrow]">
+        <div ng-show="timeSlot.status === 'pastTime'" class="timeSlotInner"
+             style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date :
+            'shortTime'}}
+        </div>
+        <div ng-show="timeSlot.status === 'selected'" class="timeSlotInner"
+             ng-click="timeSelected(dayAfterTomorrow, $index, timeSlot)" style="background-color:  rgb(194, 184, 172)">
+            {{timeSlot.timeSlot | date : 'shortTime'}}
+        </div>
+        <div ng-show="timeSlot.status === 'available'" class="timeSlotInner"
+             ng-click="timeSelected(dayAfterTomorrow, $index, timeSlot)">{{timeSlot.timeSlot | date : 'shortTime'}}
+        </div>
+        <div ng-show="timeSlot.status === 'canceled'" class="timeSlotInner"
+             style="text-decoration: line-through; background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.timeSlot | date :
+            'shortTime'}}
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'pending'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Pending
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'feedback-requested'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Feedback
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'confirmed'"
+             style="background-color: rgba(240, 0, 0, 0.3)">{{timeSlot.buyersAgent}}
+        </div>
+        <div class="timeSlotInner" ng-show="timeSlot.status === 'completed'"
+             style="background-color: rgba(240, 0, 0, 0.3)">Completed
+        </div>
+    </div>
+</div>
+<div ng-show="showMe" class="addListingButton" ng-click="showRequest2()">
+    <div class="fa-circl ">&#xf111;</div>
+    <div class="arrowRight ">&#xf04e;</div>
+</div>
